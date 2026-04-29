@@ -1,0 +1,189 @@
+$--color-primary: #297bff;
+$--color-info: #1f2041;
+
+$--color-background-base: #fbfbff;
+$--color-background-light: var(--background-secondary-400);
+
+$--color-text-primary: #212121;
+$--color-text-light: #fffefa;
+$--color-text-secondary: #8e8e91;
+
+$--color-success: #60ab9a;
+$--color-danger: #ef626c;
+$--color-warning: #ffc145;
+
+$--font-path: "~element-ui/lib/theme-chalk/fonts";
+
+.el-menu-item {
+  &.is-active {
+    background-color: #297bff !important;
+  }
+}
+
+.el-menu::before,
+.el-menu::after {
+  content: none !important;
+}
+
+.el-icon-close {
+  color: #fbfbff !important;
+}
+
+.dark {
+  .el-table {
+    border-bottom: #041026 !important;
+  }
+  .el-table__cell {
+    color: var(--background-secondary-400);
+    background-color: var(--space-500);
+    border-color: var(--space-500);
+  }
+  .el-menu-item {
+    &.is-active {
+      background-color: var(--space-100) !important;
+    }
+  }
+
+  .el-menu-item:hover {
+    background-color: var(--space-100) !important;
+  }
+
+  .el-table th.el-table__cell {
+    border-color: var(--space-800);
+    background-color: var(--space-800);
+    color: var(--background-secondary-400);
+  }
+  .el-table__body tr:hover > td {
+    background-color: var(--space-400) !important;
+  }
+  .el-table td,
+  .el-table th.is-leaf {
+    border-bottom: 1px solid var(--secondary-400) !important;
+  }
+  .el-table::before,
+  .el-table--group::after,
+  .el-table--border::after {
+    background-color: var(--space-500);
+  }
+  .el-table__body-wrapper {
+    background-color: var(--space-500);
+  }
+  .el-input__inner {
+    background-color: var(--space-500);
+    border: none;
+    border-bottom: 1px solid var(--secondary-400) !important;
+
+    &:focus {
+      border: 1px solid;
+      border-color: var(--primary-500) !important;
+    }
+  }
+
+  .el-input.is-disabled .el-input__inner {
+    background-color: var(--space-900);
+    color: #f6f2f2;
+    border-bottom: 1px solid var(--secondary-400) !important;
+  }
+
+  .el-input.is-disabled .el-input__inner::placeholder {
+    color: var(--secondary-300);
+  }
+
+  .el-button--default {
+    border: var(--space-100);
+    &:hover {
+      color: #f6f2f2;
+      background-color: var(--space-100);
+      border: var(--space-100);
+    }
+
+    &focus {
+      color: #f6f2f2;
+      background-color: var(--space-100);
+      border: var(--space-100);
+    }
+  }
+
+  .el-button--warning {
+    background-color: #e2ab3d;
+    border: none;
+
+    &:hover {
+      background-color: #ffc145;
+    }
+    &:focus {
+      background-color: #ffc145;
+    }
+  }
+
+  .el-button--danger {
+    background-color: #aa3940;
+    border: #aa3940;
+
+    &:hover {
+      background-color: #ef626c;
+    }
+    &:focus {
+      background-color: #ef626c;
+    }
+  }
+
+  .el-button--primary {
+    background-color: var(--primary-800);
+
+    &:hover {
+      background-color: var(--primary-500);
+    }
+    &:focus {
+      background-color: var(--primary-500);
+    }
+  }
+
+  .el-notification {
+    border: none;
+    background-color: var(--space-400);
+  }
+
+  .el-message-box {
+    border: none;
+    background-color: var(--space-400);
+  }
+
+  .el-message-box__btns .el-button--default {
+    color: var(--background-secondary-900);
+    background-color: #f6f2f2;
+    border-color: var(--background-secondary-400);
+  }
+
+  .el-message-box__title {
+    color: var(--background-secondary-400);
+  }
+
+  .el-message-box__content {
+    color: var(--background-secondary-400);
+  }
+
+  .el-notification__title {
+    color: var(--background-secondary-400);
+  }
+
+  .el-notification__content {
+    color: var(--background-secondary-400);
+  }
+
+  .el-dialog__headerbtn .el-dialog__close {
+    color: var(--background-secondary-400);
+  }
+
+  .el-input__inner {
+    color: var(--background-secondary-400);
+  }
+
+  .el-card {
+    &.is-always-shadow {
+      box-shadow: 10px 8px 12px -10px var(--secondary-400);
+    }
+  }
+}
+
+@import "element-ui/packages/theme-chalk/src/index";

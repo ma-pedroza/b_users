@@ -1,0 +1,91 @@
+:root {
+  --secondary: #1f2041;
+  --background: #f2f2f6;
+  --background-dark: #1a1837;
+  --background-medium: #222135;
+
+  --color-text: #212121;
+  --color-text-white: #fffefa;
+  --color-text-secondary: #8e8e91;
+
+  --color-success: #60ab9a;
+  --color-error: #ef626c;
+  --color-warning: #ffc145;
+
+  /* Primary #297bff */
+  --primary-100: #dbe5ff;
+  --primary-200: #aec8ff;
+  --primary-300: #82abff;
+  --primary-400: #5690ff;
+  --primary-500: #297bff;
+  --primary-600: #2264e6;
+  --primary-700: #1b4dbb;
+  --primary-800: #143996;
+  --primary-900: #0a2472;
+
+  --space-100: #2f4a85;
+  --space-200: #263e6f;
+  --space-300: #1e3259;
+  --space-400: #162643;
+
+  --space-500: #0a1426;
+  --space-600: #081120;
+  --space-700: #060d1a;
+  --space-800: #040914;
+  --space-900: #02050d;
+
+  /* Secondary #1f2041 */
+  --secondary-100: #d9d9ea;
+  --secondary-200: #b3b3d5;
+  --secondary-300: #8c8cc0;
+  --secondary-400: #666699;
+  --secondary-500: #1f2041;
+  --secondary-600: #1a1837;
+  --secondary-700: #14112c;
+  --secondary-800: #0f0b22;
+  --secondary-900: #080611;
+
+  /* Background #fbfbff */
+  --bg-100: #ffffff;
+  --bg-200: #fefeff;
+  --bg-300: #fdfdff;
+  --bg-400: #fbfbff;
+  --bg-500: #fbfbff;
+  --bg-600: #e6e6f2;
+  --bg-700: #ccccd9;
+  --bg-800: #b3b3c0;
+  --bg-900: #9999a6;
+
+  /* Background Secondary #f2f2f6 */
+  --background-secondary-100: #ffffff;
+  --background-secondary-200: #f9f9fc;
+  --background-secondary-300: #f5f5f9;
+  --background-secondary-400: #f2f2f6;
+  --background-secondary-500: #f2f2f6;
+  --background-secondary-600: #d9d9e0;
+  --background-secondary-700: #bfbfd1;
+  --background-secondary-800: #a6a6c2;
+  --background-secondary-900: #8c8ca3;
+
+  /* Dark Background #1f2041 */
+  --dark-background-100: #d9d9ea;
+  --dark-background-200: #b3b3d5;
+  --dark-background-300: #8c8cc0;
+  --dark-background-400: #666699;
+  --dark-background-500: #1f2041;
+  --dark-background-600: #1a1837;
+  --dark-background-700: #14112c;
+  --dark-background-800: #0f0b22;
+  --dark-background-900: #080611;
+
+  /* Dark Background Secondary #1f2041 */
+  --dark-background-secondary-100: #d9d9ea;
+  --dark-background-secondary-200: #b3b3d5;
+  --dark-background-secondary-300: #8c8cc0;
+  --dark-background-secondary-400: #666699;
+  --dark-background-secondary-500: #1f2041;
+  --dark-background-secondary-600: #1a1837;
+  --dark-background-secondary-700: #14112c;
+  --dark-background-secondary-800: #0f0b22;
+  --dark-background-secondary-900: #080611;
+}
