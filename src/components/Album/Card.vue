@@ -22,7 +22,15 @@
         </div>
       </div>
       <div class="!w-[40px] !h-[40px] flex-shrink-0 flex justify-center">
-        <i class="el-icon-star-off text-lg dark:text-light"></i>
+        <i
+          class="el-icon-star-off text-lg hover:scale-110 transition-transform duration-100 dark:text-light cursor-pointer"
+          :class="[
+            active
+              ? 'el-icon-star-on text-lg scale-150 mt-1 text-[#ffc145] dark:text-[#ffc145]'
+              : '',
+          ]"
+          @click="handleIcon"
+        ></i>
       </div>
     </div>
   </div>
@@ -31,6 +39,12 @@
 <script>
 export default {
   name: "Card",
+
+  data() {
+    return {
+      active: false,
+    };
+  },
 
   props: {
     album: {
@@ -45,6 +59,10 @@ export default {
         name: "AlbumView",
         params: { id: this.album.id },
       });
+    },
+
+    handleIcon() {
+      this.active = !this.active;
     },
   },
 };

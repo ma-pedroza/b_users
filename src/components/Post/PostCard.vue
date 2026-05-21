@@ -22,7 +22,11 @@
     </div>
     <div class="p-3 flex gap-3">
       <button>
-        <i class="text-2xl el-icon-star-off"></i>
+        <i
+          class="text-2xl el-icon-star-off hover:scale-110 transition-transform duration-100"
+          :class="[active ? 'el-icon-star-on scale-125 text-[#ffc145]' : '']"
+          @click="handleIcon"
+        ></i>
       </button>
       <button @click="commentsBoolean">
         <i class="text-2xl el-icon-chat-round"></i>
@@ -58,6 +62,7 @@ export default {
     return {
       commentsOpen: false,
       comments: [],
+      active: false,
     };
   },
 
@@ -88,6 +93,10 @@ export default {
     commentsBoolean() {
       this.getComments();
       this.commentsOpen = !this.commentsOpen;
+    },
+
+    handleIcon() {
+      this.active = !this.active;
     },
   },
 };

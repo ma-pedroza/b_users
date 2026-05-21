@@ -5,7 +5,7 @@
     <div
       class="w-full rounded-t-2xl bg-gradient-to-br from-[#5576e2] to-[#1e40af] h-[100px] dark:from-[#5576e2] dark:to-[#01071a]"
     ></div>
-    <div class="px-7 h-full">
+    <div class="px-7">
       <div class="flex items-center">
         <div class="flex items-center gap-5 py-5 w-full">
           <el-image
@@ -26,7 +26,7 @@
         </div>
       </div>
 
-      <div class="flex flex-col items-center">
+      <div class="flex flex-col h-full items-center">
         <div class="flex w-full gap-7 mb-5">
           <div class="w-full flex flex-col gap-y-1">
             <div class="font-medium text-secondary-400 dark:text-white">
@@ -107,9 +107,10 @@
             />
           </div>
         </div>
-        <div class="mt-8">
-          <el-button @click="save" type="success"> Salvar </el-button>
-        </div>
+      </div>
+
+      <div class="flex justify-center">
+        <el-button @click="save" type="success"> Salvar </el-button>
       </div>
     </div>
   </div>

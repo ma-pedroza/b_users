@@ -64,14 +64,14 @@
           </el-menu-item>
         </router-link>
 
-        <router-link to="/config">
+        <!-- <router-link to="/config">
           <el-menu-item
             class="w-full h- !h-[45px] rounded-lg flex justify-center items-center"
             index="7"
           >
             <i class="el-icon-setting !mr-0"></i>
           </el-menu-item>
-        </router-link>
+        </router-link> -->
 
         <el-menu-item
           @click="logout"
