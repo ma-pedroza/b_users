@@ -4,6 +4,11 @@ Aplicação SPA desenvolvida com Vue 2 consumindo a API pública JSONPlaceholder
 
 ---
 
+<img width="1911" height="1057" alt="image" src="https://github.com/user-attachments/assets/6d4c653f-7113-4ead-8375-18edf55be445" />
+<img width="1918" height="1058" alt="image" src="https://github.com/user-attachments/assets/86346c47-baa7-4a09-bfcb-3ed2e2aceefc" />
+
+
+
 ## ✨ Funcionalidades
 
 - 🔐 Autenticação com login e registro
