@@ -2,7 +2,7 @@
   <el-dialog
     @close="emit"
     :visible.sync="dialogVisible"
-    width="30%"
+    width="clamp(400px, 30vw, 500px)"
     class="custom-dialog"
   >
     <div class="flex flex-col items-center justify-center gap-1">

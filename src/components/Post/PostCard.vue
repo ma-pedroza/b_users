@@ -1,7 +1,7 @@
 <template>
   <el-card
     :body-style="{ padding: '0px' }"
-    class="box-card w-[550px] h-[auto] !rounded-2xl dark:bg-space-800 dark:text-light dark:border-space-800 dark:shadow hover:scale-105 transition-transform duration-100 pointer"
+    class="box-card w-[clamp(320px, 30vw ,550px)] h-[auto] !rounded-2xl dark:bg-space-800 dark:text-light dark:border-space-800 dark:shadow hover:scale-105 transition-transform duration-100 pointer"
   >
     <div class="p-2 flex items-center gap-2">
       <el-avatar

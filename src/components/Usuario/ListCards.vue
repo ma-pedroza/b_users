@@ -1,6 +1,20 @@
 <template>
   <el-row class="py-5" :gutter="20">
-    <el-col v-for="user in usersFiltrados" :span="8" class="mb-8">
+    <!-- Desktop -->
+    <el-col
+      v-for="user in usersFiltrados"
+      :span="8"
+      class="mb-8 hidden md:block"
+    >
+      <div class="flex justify-center items-center">
+        <Card @detail="emitDetail" :user="user" :key="user.id"></Card>
+      </div>
+    </el-col>
+    <el-col
+      v-for="user in usersFiltrados"
+      :span="24"
+      class="mb-8 block md:hidden"
+    >
       <div class="flex justify-center items-center">
         <Card @detail="emitDetail" :user="user" :key="user.id"></Card>
       </div>

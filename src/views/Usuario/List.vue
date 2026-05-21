@@ -1,6 +1,7 @@
 <template>
   <div>
-    <div class="flex justify-between py-3 items-center">
+    <!-- Desktop -->
+    <div class="hidden md:flex justify-between py-3 items-center">
       <el-input
         class="!w-96 !border-none"
         v-model="search"
@@ -26,6 +27,37 @@
         >
       </div>
     </div>
+
+    <!-- Mobile -->
+    <div
+      class="block md:hidden flex flex-col justify-between py-3 items-center"
+    >
+      <el-input
+        class="!w-full !border-none"
+        v-model="search"
+        size="medium"
+        placeholder="Digite para pesquisar"
+      />
+      <div class="mt-2 w-full">
+        <el-button
+          class="!p-2"
+          @click="changeLayout"
+          size="medium"
+          type="warning"
+          ><i class="el-icon-s-grid text-"></i
+        ></el-button>
+        <el-button
+          @click="setCreate()"
+          class="!p-2 dark:bg-space-100 dark:border-space-400"
+          size="medium"
+          type="primary"
+        >
+          <i class="el-icon-plus"></i>
+          Adicionar</el-button
+        >
+      </div>
+    </div>
+
     <ListCards
       @detail="setDetail"
       v-if="layout == 'cards'"
