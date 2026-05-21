@@ -1,24 +1,95 @@
-# b-users
+# B-users
 
-## Project setup
+Aplicação SPA desenvolvida com Vue 2 consumindo a API pública JSONPlaceholder para simular um sistema completo de gerenciamento de usuários, posts, álbuns e tarefas.
+
+---
+
+## ✨ Funcionalidades
+
+- 🔐 Autenticação com login e registro
+- 🛡 Guard de rotas (`requireAuth`)
+- 👥 Gerenciamento de usuários
+  - Listagem em tabela
+  - Visualização em cards
+  - Criação
+  - Edição
+  - Detalhamento
+- 📝 Feed de posts
+- 📸 Sistema de álbuns
+  - Visualização de fotos
+  - Favoritar álbuns
+- ✅ Gerenciamento de tarefas (To-Dos)
+- 👤 Página de perfil
+- 🌙 Tema claro/escuro
+- 📱 Layout responsivo
+
+---
+
+## 🛠 Stack Utilizada
+
+| Camada | Tecnologia |
+|---|---|
+| Framework | Vue 2.6 |
+| State Management | Vuex 3 |
+| Roteamento | Vue Router 3 |
+| HTTP Client | Axios |
+| UI Components | Element UI 2 |
+| Estilização | Tailwind CSS 3 + SCSS |
+| Build Tool | Vue CLI 5 |
+
+## 🌐 APIs Consumidas
+
+### JSONPlaceholder
+
+Base URL:
+
+```txt
+https://jsonplaceholder.typicode.com
 ```
+
+### Picsum Photos
+
+Imagens aleatórias para os álbuns:
+
+```txt
+https://picsum.photos/300/280?random={id}
+```
+
+---
+
+### Pravatar
+
+Avatares dos usuários:
+
+```txt
+https://i.pravatar.cc/150?img={userId}
+```
+
+---
+---
+
+## 🚀 Instalação
+
+Clone o projeto:
+
+```bash
+git clone <url-do-repositorio>
+```
+
+Instale as dependências:
+
+```bash
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
+Execute o projeto:
+
+```bash
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+---
 
-### Lints and fixes files
-```
-npm run lint
-```
+## 👨‍💻 Autor
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Desenvolvido por Matheus Pedroza.
