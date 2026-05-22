@@ -85,7 +85,7 @@
           <el-dropdown>
             <i class="el-icon-more"></i>
             <template #dropdown>
-              <el-dropdown-menu>
+              <el-dropdown-menu class="dark:bg-space-400 dark:text-white">
                 <el-dropdown-item
                   @click.native="emitDetail(scope.row)"
                   class="dark:bg-space-400 dark:text-white"
@@ -104,6 +104,7 @@
 
                 <el-dropdown-item
                   @click.native="deleteUser(scope.row)"
+                  class="dark:bg-space-400 dark:text-white"
                 >
                   <i class="text-lg -0 el-icon-delete"></i>
                   Excluir
