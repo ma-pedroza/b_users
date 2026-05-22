@@ -78,7 +78,7 @@
         </div>
       </div>
 
-      <div ref="sentinel"></div>
+      <div ref="sentinelDesktop"></div>
     </div>
 
     <!-- Mobile -->
@@ -156,7 +156,7 @@
         </div>
       </div>
 
-      <div ref="sentinel"></div>
+      <div ref="sentinelMobile"></div>
     </div>
   </main>
 </template>
@@ -167,7 +167,7 @@ export default {
   data() {
     return {
       currentPage: 1,
-      itemsPage: 10,
+      itemsPage: 12,
       observer: null,
       loading: false,
       search: "",
@@ -191,10 +191,8 @@ export default {
         .sort(() => Math.random() - 0.5)
         .map((tarefa) => {
           const usuario = getUsuario(tarefa.userId);
-          return {
-            ...tarefa,
-            nomeUsuario: usuario?.name,
-          };
+          tarefa.nomeUsuario = usuario?.name;
+          return tarefa;
         })
         .filter((tarefa) => {
           if (this.filter === "Usuario") {
@@ -237,7 +235,8 @@ export default {
         }
       });
 
-      this.observer.observe(this.$refs.sentinel);
+      this.observer.observe(this.$refs.sentinelDesktop);
+      this.observer.observe(this.$refs.sentinelMobile);
     },
   },
 
