@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="flex flex-row bg-white border-b dark:bg-space-800  dark:border-secondary-400 dark:text-white w-full h-[70px] rounded-lg p-3 justify-between"
+    class="flex flex-row bg-white border-b dark:bg-space-500  dark:border-space-400 dark:text-white w-full h-[70px] rounded-lg p-3 justify-between"
   >
     <h1 class="font-semibold">{{ title }}</h1 class="font-semibold">
     <div class="flex items-center gap-2">

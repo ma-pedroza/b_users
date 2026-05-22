@@ -4,7 +4,7 @@
       default-active="1"
       active-text-color="#fffefa"
       text-color="#fffefa"
-      class="rounded-lg dark:bg-space-800 dark:border-secondary-400 !p-3 h-full w-full flex flex-col gap-2 items-center justify-between"
+      class="rounded-lg dark:bg-space-500 dark:border-space-400 !p-3 h-full w-full flex flex-col gap-2 items-center justify-between"
     >
       <div class="w-full flex flex-col">
         <el-card

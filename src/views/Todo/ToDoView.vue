@@ -2,7 +2,7 @@
   <main>
     <!-- Desktop -->
     <div
-      class="hidden md:block bg-white flex flex-col justify-center gap-4 dark:bg-space-400 dark:text-secondary-100 w-full px-4 h-full overflow-hidden overflow-y-scroll rounded-lg flex flex-col justify-start"
+      class="hidden md:block bg-white flex flex-col justify-center gap-4 dark:bg-space-500 dark:text-secondary-100 w-full px-4 h-full overflow-hidden overflow-y-scroll rounded-lg flex flex-col justify-start"
     >
       <div class="flex mt-4 gap-2">
         <el-input
@@ -41,7 +41,7 @@
         </div>
         <div
           v-for="tarefa in listaPaginada"
-          class="border-y w-full flex justify-evenly p-2 hover:scale-105 transition-all duration-700"
+          class="border-y dark:border-space-400 w-full flex justify-evenly p-2 hover:scale-105 transition-all duration-700"
         >
           <div class="pl-5 flex items-center w-[100%] overflow-hidden">
             <div label="Id" class="w-[5%] mr-4">{{ tarefa.id }}</div>
